@@ -4398,12 +4398,15 @@ button:hover {
   width: 200px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.5);
 }
+#quiz:hover {
+  transform: scale(1.2);
+}
 .imageColumn {
   float: left;
   width: 25%;
   padding: 10px;
 }
-img {
+.images {
   height: 250px;
   width: 250px;
 }
