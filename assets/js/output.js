@@ -19,7 +19,7 @@ var app = firebase.initializeApp(firebaseConfig);
    const submitPlayers = document.querySelector("#submit_btn");
    const name = document.querySelector("#name");
    const leaderBoard = document.querySelector("#leaderBoard");
-   const grade = document.querySelector("grade-percentage");
+   const grade = document.getElementById("gradepercentage");
 
 function renderplayers(doc){
     let tr = document.createElement('tr');
@@ -48,12 +48,22 @@ db.collection('players').orderBy('grade').onSnapshot(snapshot => {
 })
 
 // saving data
+ console.log(grade)
 submitPlayers.addEventListener("click",function(){
+    /*var str,
+    element = document.getElementById('grade-percentage');
+        if (element != null) {
+        str = element.value;
+        }
+        else {
+       str = null;
+         }*/
     if( document.getElementById("name").value != ''){
     //e.preventDefault();
     db.collection('players').add({
-        name: name.value,
+        name: name.value,        
         grade: parseInt(grade.value)
+
         });
       }
     });
