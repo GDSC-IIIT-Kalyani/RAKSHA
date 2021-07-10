@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html,
 body,
 div,
@@ -4390,11 +4384,14 @@ button:hover {
 #box {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.5);
 }
+#box:hover {
+  transform: scale(1.2);
+}
 #para {
   text-align: left;
 }
 #quiz {
-  background-color: cyan;
+  background-color: rgba(0, 255, 136, 0.849);
   color: black;
   font-weight: bold;
   border-radius: 10px;
