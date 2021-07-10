@@ -3970,7 +3970,7 @@ body.is-mobile #main > header {
 /* Footer */
 
 #footer {
-  padding: 6em 0 4em 0;
+  padding: 0em 0 1em 0;
   background-color: #1d242a;
   text-align: center;
 }
@@ -4397,4 +4397,25 @@ button:hover {
   border-radius: 10px;
   width: 200px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+.imageColumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+img {
+  height: 250px;
+  width: 250px;
+}
+.column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
