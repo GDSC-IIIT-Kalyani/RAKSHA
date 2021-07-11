@@ -20,6 +20,8 @@
     <br />
     <br />
     ·
+    <a href="https://drive.google.com/file/d/1zXvHk6HpLrv-2i127cx1vv41eDuQ-IVt/view?usp=sharing">Video link</a>
+    ·
     <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Report Bug</a>
     ·
     <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Request Feature</a>
@@ -114,7 +116,7 @@ For the complete list visit [requirements.txt](https://github.com/akshitadixit/R
 ## Screenshots
 ![land](https://user-images.githubusercontent.com/72789934/125187061-5ca9f980-e24b-11eb-991e-9504b4789acc.PNG)
 ![reg](https://user-images.githubusercontent.com/72789934/125187162-d7731480-e24b-11eb-9a4a-ec4cc1c14ac2.PNG)
-
+![Screenshot from 2021-07-11 12-27-58](https://user-images.githubusercontent.com/56997545/125187699-87498180-e24e-11eb-8edc-9b2372b3bfa6.png)
 
 
 
@@ -124,7 +126,7 @@ For the complete list visit [requirements.txt](https://github.com/akshitadixit/R
 See the [open issues](https://github.com/akshitadixit/RAKSHA) for a list of proposed features (and known issues).
 
 ## VIDEOS
-Video link - https://drive.google.com/drive/folders/137D3G1EARbrB94Wq3GHeIZF4SMmPG8Gz?usp=sharing
+Video link - https://drive.google.com/file/d/1zXvHk6HpLrv-2i127cx1vv41eDuQ-IVt/view?usp=sharing
 
 
 <!-- CONTRIBUTING -->
