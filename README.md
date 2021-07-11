@@ -114,8 +114,7 @@ For the complete list visit [requirements.txt](https://github.com/akshitadixit/R
 ## Screenshots
 
 <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/login-ss.jpeg"  width="100" height="200">  
-images/land.PNG
-<img src="https://github.com/akshitadixit/RAKSHA/images/land.PNG"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss2.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss3.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss4.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss5.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/vc-ss.jpeg"  width="100" height="200">
+<img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss2.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss3.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss4.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss5.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/vc-ss.jpeg"  width="100" height="200">
 
 
 <!-- ROADMAP -->
