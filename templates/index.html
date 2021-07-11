@@ -8,16 +8,20 @@
   <body>
     <div class="header">
       <div class="btn-wrapper">
-        <button type="submit" class="start">Start!</button>
+        <button type="submit" id="record" class="start">Start!</button>
         <div class="box">
-          <img src="{{ url_for('video_feed') }}" />
+          <img src="{{ url_for('video_viewer') }}" />
           <div class="result">Your Score : {{ score }} !!</div>
         </div>
-        <button type="submit" class="stop">Stop!</button>
+        <button type="submit" id="stop" class="stop">Stop!</button>
       </div>
       <div class="bck-div">
         <button type="submit" class="back-to-home">Back to Home</button>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='recorder.js') }}"
+    ></script>
   </body>
 </html>
