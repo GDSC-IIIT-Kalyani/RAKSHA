@@ -35,7 +35,7 @@ body {
   margin: auto;
   display: flex;
 }
-.start {
+#record {
   background: #8ae31e;
   border: solid 2px darkgreen;
   border-radius: 5px;
@@ -43,7 +43,7 @@ body {
   margin: auto 2em;
   height: max-content;
 }
-.stop {
+#stop {
   background: #e74b36;
   border: solid 2px rgb(175, 4, 4);
   border-radius: 5px;
