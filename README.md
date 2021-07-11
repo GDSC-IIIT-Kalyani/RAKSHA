@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="static/logo.png" alt="Logo" width="350" height="350">
+    <img src="static/logo.PNG" alt="Logo" width="350" height="350">
 
   <h3 align="center">RAKSHA</h3>
 
