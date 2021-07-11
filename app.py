@@ -2,16 +2,15 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
 
-# Raspberry Pi camera module (requires picamera package, developed by Miguel Grinberg)
 # from camera_pi import Camera
 from camera import Camera
 from scoring import get_score
 
 app = Flask(__name__)
 
-category = 'Hammer Strike'
+global category
 
 
 def gen(camera):
@@ -46,9 +45,11 @@ def login():
 def quiz():
     return render_template('quiz.html')
 
-@app.route('/pose')
+@app.route('/pose', methods=['GET', 'POST'])
 def pose():
-    """Video streaming home page."""
+    global category
+    """Video streaming"""
+    category = request.form.get('detect')
     return render_template('pose.html')
 
 @app.route('/video_feed')
@@ -57,9 +58,26 @@ def video_feed():
     return Response(gen(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=mySplitter')
                     
-@app.route('/update')
+@app.route('/update', methods=['GET', 'POST'])
 def update_score():
-    return render_template('pose.html', score=get_score(category))              
+    return render_template('score.html', score=get_score(category))        
+
+@app.route('/record_status', methods=['POST'])
+def record_status():
+    global video_camera 
+    if video_camera == None:
+        video_camera = VideoCamera()
+
+    json = request.get_json()
+
+    status = json['status']
+
+    if status == "true":
+        video_camera.start_record()
+        return jsonify(result="started")
+    else:
+        video_camera.stop_record()
+        return jsonify(result="stopped")      
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True)

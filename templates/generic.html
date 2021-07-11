@@ -37,7 +37,7 @@
       </nav>
     </header>
 
-    <article id="main" style="background-image: url('../static/image/backa.jpg');background-repeat: no-repeat; background-attachment: fixed;  
+    <article id="main" style="background-image: url('../static/images/backa.jpg');background-repeat: no-repeat; background-attachment: fixed;  
   background-size: cover;">
       <header>
         <h2 style="text-align: center; color:black; font-size:100px;">Modules</h2>
@@ -143,18 +143,18 @@
                 <div class="column">
                   <h4 class> Hammmer Strike</h4>
                   <img class="images" src="../static/images/hammer.jpg" alt="Snow" style="width:100%;height:250px;border: 1px solid black;">
-                  <a href="/quiz">
-                    <button id="quiz">practice</button>
-                  </a>
+                  <form action="/pose" method="GET">
+                    <button type="submit" id="quiz" name="detect" value="Hammer Strike">Practice</button>
+                  </form>
 
                 </div>
                 <div class="column">
                   <h4> Groin Kick</h4>
                   <img src="../static/images/groin.jpg" alt="Mountains"
                     style="width:100%;height:250px;border: 1px solid black;">
-                  <a href="/quiz">
-                    <button id="quiz">practice</button>
-                  </a>
+                    <form action="/pose" method="GET">
+                    <button type="submit" id="quiz" name="detect" value="Groin Kick">Practice</button>
+                    </form>
                 </div>
               </div>
               <hr>
@@ -207,18 +207,17 @@
                 <div class="column">
                   <h4 class>Escape Bear Hug Attack</h4>
                   <img src="../static/images/bear.jpg" alt="Snow" style="width:100%;height:250px;border: 1px solid black;">
-                  <a href="/quiz">
-                    <button id="quiz">practice</button>
-                  </a>
-
+                  <form action="/pose" method="GET">
+                    <button type="submit" id="quiz" name="detect" value="Escape Bear Hug">Practice</button>
+                  </form>
                 </div>
                 <div class="column">
                   <h4> ELBOW STRIKE</h4>
                   <img src="../static/images/elbow.jpg" alt="Mountains"
                     style="width:100%;height:250px;border: 1px solid black;">
-                  <a href="/quiz">
-                    <button id="quiz">practice</button>
-                  </a>
+                    <form action="/pose" method="GET">
+                    <button type="submit" id="quiz" name="detect" value="Elbow Strike">Practice</button>
+                  </form>
                 </div>
               </div>
 
@@ -273,7 +272,8 @@
       //auth.signOut();
       window.location.replace("login.html");
       //alert("Signed Out");
-    }</script>
+    }
+    </script>
   <script src="../static/js/jquery.min.js"></script>
   <script src="../static/js/jquery.scrollex.min.js"></script>
   <script src="../static/js/jquery.scrolly.min.js"></script>

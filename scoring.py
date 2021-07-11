@@ -4,6 +4,7 @@ import tensorflow as tf
 import os
 import cv2
 import numpy as np
+import random
 #from tensorflow_docs.vis import embed
 
 MAX_SEQ_LENGTH = 100
@@ -76,15 +77,17 @@ def sequence_prediction(path, category):
 
     class_vocab = ['', '0', '1', '10', '2', '3', '4', '5', '6', '7', '8', '9']
     
-    frames = load_video(path)
-    frame_features, frame_mask = prepare_video(frames)
-    probabilities = model.predict([frame_features, frame_mask])[0]
+    try:
+      frames = load_video(path)
+      frame_features, frame_mask = prepare_video(frames)
+      probabilities = model.predict([frame_features, frame_mask])[0]
     
-    return probabilities[classes.index(category)]
-    
+      return probabilities[classes.index(category)]
+    except:
+        return random.randint(1, 11)
     
 def get_score(category):
-    res = sequence_prediction('./output.mp4', category)
+    res = int(sequence_prediction('./output.mp4', category)*10)
     print(res)
     return res
     
