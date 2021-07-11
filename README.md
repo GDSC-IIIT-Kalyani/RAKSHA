@@ -112,9 +112,10 @@ For the complete list visit [requirements.txt](https://github.com/akshitadixit/R
 
 <!-- USAGE EXAMPLES -->
 ## Screenshots
-![land](https://user-images.githubusercontent.com/72789934/125187061-5ca9f980-e24b-11eb-991e-9504b4789acc.PNG)
-<img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/login-ss.jpeg"  width="100" height="200">  
-<img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss2.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss3.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss4.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/ss5.jpeg"  width="100" height="200">  <img src="https://github.com/Vedantgupta2303/EdMission/blob/master/setup/vc-ss.jpeg"  width="100" height="200">
+![land](https://user-images.githubusercontent.com/72789934/125187061-5ca9f980-e24b-11eb-991e-9504b4789acc.PNG =100x20)
+![quiz](https://user-images.githubusercontent.com/72789934/125187087-7e0ae580-e24b-11eb-9155-644734748de1.PNG =100x20)
+
+
 
 
 <!-- ROADMAP -->
