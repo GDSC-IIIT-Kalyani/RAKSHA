@@ -113,7 +113,6 @@ For the complete list visit [requirements.txt](https://github.com/akshitadixit/R
 <!-- USAGE EXAMPLES -->
 ## Screenshots
 ![land](https://user-images.githubusercontent.com/72789934/125187061-5ca9f980-e24b-11eb-991e-9504b4789acc.PNG)
-![quiz](https://user-images.githubusercontent.com/72789934/125187087-7e0ae580-e24b-11eb-9155-644734748de1.PNG)
 ![reg](https://user-images.githubusercontent.com/72789934/125187162-d7731480-e24b-11eb-9a4a-ec4cc1c14ac2.PNG)
 
 
