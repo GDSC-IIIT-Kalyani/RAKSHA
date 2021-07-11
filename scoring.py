@@ -84,10 +84,11 @@ def sequence_prediction(path, category):
     
       return probabilities[classes.index(category)]
     except:
+    # just incase some exception occurs with the video, or it gets corrupted
         return random.randint(1, 11)
     
 def get_score(category):
-    res = int(sequence_prediction('./output.mp4', category)*10)
+    res = int(sequence_prediction('./output.mp4', category))
     print(res)
     return res
     

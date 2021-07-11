@@ -1,5 +1,6 @@
 import cv2
 import threading
+from pose import decorate
 
 class RecordingThread (threading.Thread):
     def __init__(self, name, camera):
@@ -42,6 +43,7 @@ class VideoCamera(object):
     
     def get_frame(self):
         ret, frame = self.cap.read()
+        frame = decorate(frame)
 
         if ret:
             ret, jpeg = cv2.imencode('.jpg', frame)
