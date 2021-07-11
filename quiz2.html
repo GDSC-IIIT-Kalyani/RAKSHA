@@ -78,21 +78,18 @@ button {
   height: 30px;
   text-align: center;
   border-radius: 0px 10px;
-  background-color: white;
   background: transparent;
   outline: none;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: white;
   border: 2px solid #fff;
   border-radius: 0px 10px;
 }
 
 button:disabled{
   display:none;
-  background-color: white;
 }
 
 #name-submit-button {
@@ -356,17 +353,18 @@ th {
   <head>
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
     </head>
 
 <body>
+
 <p>"leaderBoard"</p>
-<input type="submit" id="results" onclick="k()" ></input>
+<input type="submit" id="results" onclick="k1()" ></input>
 	<center>
 	<div class="game-quiz-container">
         
@@ -378,71 +376,90 @@ th {
           <h1 id="display-question"></h1>
         </div>
 
-Q1.About what percentage of violent crimes is accounted for by robbery??<br>
-<p><input type="radio" name="question1" id="correct1">29% <br></p>
-<p><input type="radio" name="question1">88% <br></p>
-<p><input type="radio" name="question1">20%<br></p>
-<p><input type="radio" name="question1">10% <br></p><br>
+Q1.Why should your left leg be forward in a basic guard position?<br>
+<p><input type="radio" name="question1" id="correct1">To protect your liver
+ <br></p>
+<p><input type="radio" name="question1">It is a more natural stance
+<br></p>
+<p><input type="radio" name="question1">For better control
+<br></p>
+<p><input type="radio" name="question1">None of the above
+ <br></p><br>
 
-Q2.Which of the following is a vulnerable target when having to fight off an attacker?<br>
-<p><input type="radio" name="question2" >Eyes <br></p>
-<p><input type="radio" name="question2">Throat<br></p>
-<p><input type="radio" name="question2" >Groin <br></p>
+Q2.What are some examples of things you can use to distract an aggressor?
+<br>
+<p><input type="radio" name="question2" >Throw dirt in their face from the ground <br></p>
+<p><input type="radio" name="question2">See if you have an aerosol can near by
+<br></p>
+<p><input type="radio" name="question2" >See if you have a pen or other sharp object in your purse
+ <br></p>
 <p><input type="radio" name="question2" id="correct2">All of the above <br></p><br>
 
-Q3.How many counters should you learn against each type of technique?<br>
-<p><input type="radio" name="question3" >3-4 <br></p>
-<p><input type="radio" name="question3"id="correct3">1-2 <br></p>
-<p><input type="radio" name="question3">10 or more <br></p>
-<p><input type="radio" name="question3">I don't know <br></p><br>
+Q3.What are some key attack points?<br>
+<p><input type="radio" name="question3" >Eyes <br></p>
+<p><input type="radio" name="question3">Groin<br></p>
+<p><input type="radio" name="question3">Knee<br></p>
+<p><input type="radio" name="question3" id="correct3">All of the above <br></p><br>
 
- Q4. The most dangerous types of knifes are...<br>
-<p><input type="radio" name="question4" id="correct4">.. are not shown until used. <br></p>
-<p><input type="radio" name="question4">... shown and used as threats first. <br></p>
-<p><input type="radio" name="question4">... easily visible before the fight begins <br></p>
-<p><input type="radio" name="question4">I don't know. <br></p>
+ Q4. A basic guard position is with a staggered stance.<br>
+<p><input type="radio" name="question4" id="correct4">True<br></p>
+<p><input type="radio" name="question4">False <br></p>
+<p><input type="radio" name="question4">Neither a nor b <br></p>
+<p><input type="radio" name="question4">both <br></p>
 <br>
-Q5. When practicing sparring against multiple opponents how many should someone progress to practicing against?<br>
-<p><input type="radio" name="question5" >2 <br></p>
-<p><input type="radio" name="question5">2-3 <br></p>
-<p><input type="radio" name="question5">1<br></p>
-<p><input type="radio" name="question5" id="correct5">4 or more<br></p><br>
+Q5. Which of these statements is a principle of engagement?<br>
+<p><input type="radio" name="question5" >Use sudden movements to create confusion <br></p>
+<p><input type="radio" name="question5" id="correct5">Use eye contact as means of confrontation<br></p>
+<p><input type="radio" name="question5">Always keep your eyes forward to get to your destination quicker<br></p>
+<p><input type="radio" name="question5" >Be the first one to instigate a fight<br></p><br>
 
-Q6.Which of the following self-defense tools is all you need to protect yourself?<br>
-<p><input type="radio" name="question6" >Mace/Pepper Spray <br></p>
-<p><input type="radio" name="question6">Whistle <br></p>
-<p><input type="radio" name="question6">Keys<br></p>
-<p><input type="radio" name="question6" id="correct6">None of the Above <br></p><br>
+Q6.You are always encouraged to seek physical confrontations.
+<br>
+<p><input type="radio" name="question6" >True <br></p>
+<p><input type="radio" name="question6" id="correct6">False
+ <br></p>
+<p><input type="radio" name="question6">Neither a nor b<br></p>
+<p><input type="radio" name="question6" >
+both <br></p><br>
 
-Q7.Is sparring practice enough to help you in a fight?<br>&nbsp;&nbsp;
-<p><input type="radio" name="question7" >Yes <br></p>
-<p><input type="radio" name="question7">No <br></p>
-<p><input type="radio" name="question7" id="correct7">It's depend <br></p>
-<p><input type="radio" name="question7">I don't know <br></p><br>
+Q7.Where is it better to land a blow to someone’s knee?<br>
+<p><input type="radio" name="question7" >To the front of the knee<br></p>
+<p><input type="radio" name="question7">Just below the knee
+ <br></p>
+<p><input type="radio" name="question7" id="correct7">To the side of the knee<br></p>
+<p><input type="radio" name="question7">None of the above
+<br></p><br>
 
-Q8. Which of the following makes a useful improvised weapon?<br>
-<p><input type="radio" name="question8" >Unbreakable Umbrella <br></p>
-<p><input type="radio" name="question8">Pocket Change <br></p></p>
-<p><input type="radio" name="question8">Backpack <br></p>
-<p><input type="radio" name="question8" id="correct8">All of the Above <br></p><br>
+Q8. You have the right to feel safe in your surroundings.<br>
+<p><input type="radio" name="question8" id="correct8">True
+ <br></p>
+<p><input type="radio" name="question8">False <br></p></p>
+<p><input type="radio" name="question8">Neither a nor b <br></p>
+<p><input type="radio" name="question8" >both <br></p><br>
  
-Q9. hould you not walk around with your hands in your pocket?<br>
-<p><input type="radio" name="question9" >Yes <br></p>
-<p><input type="radio" name="question9">No <br></p>
+Q9. What are some primary objectives when training for self defense?<br>
+<p><input type="radio" name="question9" >Learn drills that improve your timing and skills <br></p>
+<p><input type="radio" name="question9">Learn techniques that allow you to suppress your attacker
+ <br></p>
 <p><input type="radio" name="question9" id="correct9">It depends on your surroundings.<br></p>
-<p><input type="radio" name="question9">I don't know. <br></p>
+<p><input type="radio" name="question9">All of the above
+<br></p>
 <br>
-Q10. Making eye contact with an attack can make things worse.?<br>
-<p><input type="radio" name="question10" id="correct10" >Yes <br></p>
-<p><input type="radio" name="question10">No <br></p>
-<p><input type="radio" name="question10">It doesn't matter <br></p>
-<p><input type="radio" name="question10">I don't know. <br></p><br>
+Q10. What are some common ways to be more aware of your surroundings?<br>
+<p><input type="radio" name="question10"  >LKeep your doors and windows locked while driving
+
+ <br></p>
+<p><input type="radio" name="question10">Keep your valuables hidden from view
+ <br></p>
+<p><input type="radio" name="question10">Never walk on deserted streets
+ <br></p>
+<p><input type="radio" name="question10" id="correct10">All of the above
+ <br></p><br>
 <p style="font-size:30px;display:inline-block" id="scoretext" > Your Score: </p>
         <input  id="gradepercentage"  name="score" type="number"  > </input>  <br> <br>
-<input type="submit"  id="submit_btn" onclick="result()"></input> 
-<button  onclick="quiz2()"></button> <br> <br>
+<input type="submit"  id="submit_btn" onclick="result()"></input> <br> <br>
 </div></center>
- <button hidden id="results" onclick="k()">
+ <button hidden="" id="results" onclick="k1()">
             <table id="table">
                 
                     <td id="leaderBoard"></td>
@@ -450,15 +467,12 @@ Q10. Making eye contact with an attack can make things worse.?<br>
             </table>
         </button>
  
-<script src="./output.js"></script>
+ <script src="./assets/js/output1.js"></script>
 
 <script type="text/javascript">
 
-function k() {
-	window.location.replace("k.html");
-}
-function quiz2() {
-	window.location.replace("quiz2.html");
+function k1() {
+	window.location.replace("k1.html");
 }
 function result()
 {
@@ -507,9 +521,13 @@ var ele=document.getElementById("gradepercentage");
  ele.value= score;
  
 
+ //-score = document.getElementById("grade-percentage");
+// score.document.getElementById("score") ;
+ // to print on browser
+ // document.write("Your score is:"+score);
 }
 
 </script>
- <script src="./assets/js/output.js"></script>
+ <script src="./assets/js/output1.js"></script>
 </body>
 </html>
