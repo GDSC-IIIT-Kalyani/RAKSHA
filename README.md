@@ -20,7 +20,7 @@
     <br />
     <br />
     ·
-    <a href="https://drive.google.com/file/d/1zXvHk6HpLrv-2i127cx1vv41eDuQ-IVt/view?usp=sharing">Video link</a>
+    <a href="https://drive.google.com/file/d/1x_atAml5QaZT89KSTpwqJ7_WCY-tV5ql/view?usp=sharing">Video link</a>
     ·
     <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Report Bug</a>
     ·
