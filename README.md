@@ -155,7 +155,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
   <img src="https://contributors-img.web.app/image?repo=akshitadixit/RAKSHA" />
 </a>
 
-[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
