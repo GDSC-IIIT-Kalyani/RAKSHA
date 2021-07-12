@@ -155,16 +155,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
   <img src="https://contributors-img.web.app/image?repo=akshitadixit/RAKSHA" />
 </a>
 
- <tr>
-  <td align="center"><a href="https://github.com/Isha307"><img src="https://avatars.githubusercontent.com/u/52290648?v=4" width="100px;" alt=""/><br /><sub><b>Isha Shaw</b></sub></a><br />💻</a></td>
-  
- <td align="center"><a href="https://github.com/ASLManasa"><img src="https://avatars.githubusercontent.com/u/68724349?v=4" width="100px;" alt=""/><br /><sub><b> Abhishek Sharma </b></sub></a><br />💻</a></td>
-  <td align="center"><a href=https://github.com/akshitadixit"><img src="https://avatars.githubusercontent.com/u/70064084?v=4" width="100px;" alt=""/><br /><sub><b>Sakalya100
-</b></sub></a><br />💻</a></td>
-    <td align="center"><a href=https://github.com/SaloniSingh1601"><img src="https://avatars.githubusercontent.com/u/54073521?v=4" width="100px;" alt=""/><br /><sub><b>Kaustav Roy
-</b></sub></a><br />💻</a></td>
-</tr>
-</table>
+
 
 
 
