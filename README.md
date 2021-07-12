@@ -154,10 +154,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <a href="https://github.com/akshitadixit/RAKSHA/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=akshitadixit/RAKSHA" />
 </a>
+<img src ="https://github.com/ASLManasa" />
 
-<a href="https://github.com/akshitadixit/RAKSHA/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=akshitadixit/RAKSHA">
-</a>
 
 
 
