@@ -60,6 +60,14 @@ def elements():
 def generic():
     return render_template('generic.html')
 
+@app.route('/helpline')
+def helpline():
+    return render_template('helpline.html')
+
+@app.route('/laws')
+def laws():
+    return render_template('laws.html')
+
 @app.route('/k')
 def leaderboard():
     return render_template('k.html')
