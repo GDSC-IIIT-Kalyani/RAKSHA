@@ -1,6 +1,5 @@
-from tensorflow import keras
+import keras
 import imageio
-import tensorflow as tf
 import os
 import cv2
 import numpy as np
@@ -10,7 +9,7 @@ import random
 MAX_SEQ_LENGTH = 100
 NUM_FEATURES = 2048
 IMG_SIZE = 224
-model = tf.saved_model.load('./model/')
+model = keras.models.load_model('./model/')
 
 def crop_center_square(frame):
     y, x = frame.shape[0:2]
