@@ -9,10 +9,12 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, URL
 from flask_ckeditor import CKEditor, CKEditorField
 from datetime import date
-from camera import VideoCamera
+# from camera import VideoCamera
 from scoring import get_score
+from chat import get_response
 
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
@@ -49,7 +51,7 @@ category = 'Hammer Strike'
 
 @app.route('/record_status', methods=['POST'])
 def record_status():
-    global video_camera
+    global video_camera 
     if video_camera == None:
         video_camera = VideoCamera()
 
@@ -65,12 +67,12 @@ def record_status():
         return jsonify(result="stopped")
 
 def video_stream():
-    global video_camera
+    global video_camera 
     global global_frame
 
     if video_camera == None:
         video_camera = VideoCamera()
-
+        
     while True:
         frame = video_camera.get_frame()
 
@@ -82,9 +84,16 @@ def video_stream():
             yield (b'--frame\r\n'
                             b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
 
-@app.route('/')
+@app.route('/',methods = ['GET'])
 def index():
     return render_template('index.html')
+
+@app.route('/predict',methods = ['POST'])
+def predict():
+    text = request.get_json().get("message")
+    response = get_response(text)
+    message = {"answer": response}
+    return jsonify(message)
 
 @app.route('/elements')
 def elements():
@@ -198,4 +207,4 @@ def update_score():
     return render_template('score.html', score=get_score(category))
 
 if __name__ == '__main__':
-    app.run(debug=True, threaded=True)
+    app.run(debug=True)
