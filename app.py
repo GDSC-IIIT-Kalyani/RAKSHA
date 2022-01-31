@@ -207,4 +207,4 @@ def update_score():
     return render_template('score.html', score=get_score(category))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)
