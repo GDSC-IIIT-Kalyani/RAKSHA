@@ -9,7 +9,7 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, URL
 from flask_ckeditor import CKEditor, CKEditorField
 from datetime import date
-# from camera import VideoCamera
+from camera import VideoCamera
 from scoring import get_score
 from chat import get_response
 
