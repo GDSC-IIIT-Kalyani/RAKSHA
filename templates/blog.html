@@ -18,7 +18,7 @@
   <!-- Main Content -->
   <div class="container" style="background-color:white;">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-8 col-md-10 mx-auto" style="text-align:center; margin: auto;width: 50%;">
         {% for post in all_posts %}
         <div class="post-preview" style="background-color:#7CD1B8;">
           <a href="{{ url_for('show_post', post_id=post.id) }}">
@@ -40,13 +40,14 @@
 
 
         <!-- New Post -->
-        <div class="clearfix" style="padding-left:200px;padding-top:10px;padding-bottom:10px;">
-          <a class="btn btn-primary " href="{{url_for('add_new_post')}}">Create New Post</a>
+        <div class="clearfix" style="padding-left:200px;padding-top:10px;padding-bottom:10px;text-align:center;">
+          <a class="btn btn-primary " href="{{url_for('add_new_post')}}" style="">Create New Post</a>
         </div>
       </div>
     </div>
   </div>
   <hr>
+{% include "chatbot.html" %}
 
       <footer id="footer">
         <ul class="icons">

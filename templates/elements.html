@@ -28,7 +28,7 @@
 										<ul>
 											<li><a href="/">Home</a></li>
 											<li><a href="/generic">Modules</a></li>
-
+											
 											<li><a href="/helpline">Helpline</a></li>
 											<li> <a href="/laws">Laws</a></li>
 											<li><a href="/blog">Blog</a></li>
@@ -358,6 +358,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</div>
 						</section>
 					</article>
+				{% include "chatbot.html" %}
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -377,7 +378,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Scripts -->
 		    <script>
-             function signOut(){
+             function signOut(){ 
              window.location.replace("login.html");
             // alert("Signed Out");
             }</script>
