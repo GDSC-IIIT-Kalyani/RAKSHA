@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="static/css/chatbot.css">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+      <div class="container" >
+    <div class="chatbox" style="position: fixed;"  >
+        <div class="chatbox__support" >
+            <div class="chatbox__header" style="background-color: #3CBC8D;position: relative;" >
+                <div class="chatbox__image--header" >
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header" >
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Elly. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages" style="position: relative; padding-bottom:10px;">
+                <div></div>
+            </div>
+            <div class="chatbox__footer" style="position: relative; padding-bottom:10px;">
+                <input type="text" placeholder="Write a message..." style="width: 70%;padding: 12px 20px;border: 2px solid green;color:black;width:48;height:48;background-color:#CDF2CA">
+                <button class="chatbox__send--footer send__button" style="background-color: #4CAF50;color: white;text-align: center;font-size: 12px;width:80px;height:40px;border-radius: 50%;">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button"  >
+            <button style="position: fixed; bottom: 10px; right: 10px;height:70px;width:70px;background-image:url('static/images/chatbox-modified.png');background-size:cover;" ></button>
+        </div>
+    </div>
+</div>
+
+    <script  type="text/javascript">
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    <script type="text/javascript" src="static/js/chatbot.js"></script>
+
+</body>
+</html>
